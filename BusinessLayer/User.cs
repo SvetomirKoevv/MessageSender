@@ -22,5 +22,10 @@ namespace BusinessLayer
             this.Friends = new List<User>();
             this.UserName = username;
         }
+
+        public override string ToString()
+        {
+            return UserName;
+        }
     }
 }

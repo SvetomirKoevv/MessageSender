@@ -43,5 +43,10 @@ namespace BusinessLayer
             this.ConversationId = conversationId;
             this.DateSent = dateSent;
         }
+
+        public override string ToString()
+        {
+            return $"{Sender.UserName}: {MessageText}| Date: {DateSent.ToString()}";
+        }
     }
 }
